@@ -11,8 +11,6 @@ use Mail::SendGrid::Bounce;
 has 'api_user'     => (is => 'ro', isa => 'Str', required => 1);
 has 'api_key'      => (is => 'ro', isa => 'Str', required => 1);
 
-our $VERSION = '0.01';
-
 sub bounces
 {
     my $self     = shift;

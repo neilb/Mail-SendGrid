@@ -5,13 +5,10 @@ use warnings;
 
 use Mouse 0.94;
 
-has 'email'     => (is => 'ro', isa => 'Str');
-has 'created'   => (is => 'ro', isa => 'Str');
-has 'status'    => (is => 'ro', isa => 'Str');
-has 'reason'    => (is => 'ro', isa => 'Str');
-
-our $VERSION = '0.01';
-
+has 'email'     => (is => 'ro', isa => 'Str', required => 1);
+has 'created'   => (is => 'ro', isa => 'Str', required => 1);
+has 'status'    => (is => 'ro', isa => 'Str', required => 1);
+has 'reason'    => (is => 'ro', isa => 'Str', required => 1);
 
 1;
 
@@ -19,7 +16,7 @@ our $VERSION = '0.01';
 
     use Mail::SendGrid::Bounce;
 
-    $bounce = Mail::SendGrid::Bounce(
+    $bounce = Mail::SendGrid::Bounce->new(
                         email   => '...',
                         created => '...',
                         status  => '...',
