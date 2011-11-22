@@ -41,12 +41,15 @@ for when the bounce was received back at SendGrid.
 
 =method status
 
-Not sure.
+A string which identifies the type of bounce. At the moment my understanding is
+that this will either be the string '4.0.0' for a soft bounce, and '5.0.0' for
+a hard bounce. I'm trying to get confirmation or clarification from SendGrid.
 
 =method reason
 
 The reason why the message bounced; typically this is the reason returned
-by the remote MTA.
+by the remote MTA. Sometimes the reason string will start with the SMTP response
+code; I'm trying to find out from SendGrid in what situations that isn't true.
 
 =head1 SEE ALSO
 
