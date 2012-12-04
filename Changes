@@ -1,5 +1,9 @@
 Revision history for perl module Mail::SendGrid
 
+0.04 2012-12-04
+    - Added delete_bounces() method
+    - switched to the JSON endpoint, as much less hassle than XML
+
 0.03 2011-10-12
 
   - fixed typo in SYNOPSIS section of Mail::SendGrid::Bounce
