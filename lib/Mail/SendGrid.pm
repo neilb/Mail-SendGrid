@@ -235,6 +235,9 @@ email
 
 =back
 
+To delete all bounces, call this without any options:
+
+  $sendgrid->delete_bounces();
 
 =head1 SEE ALSO
 
