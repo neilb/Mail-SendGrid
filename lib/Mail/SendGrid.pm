@@ -75,7 +75,6 @@ sub delete_bounces
     if ($response->{success}) {
         $json = decode_json($response->{content});
         if ($json->{message} eq 'success') {
-            print STDERR "bounces.delete success: response= $response->{content}\n";
             return 1;
         } elsif (exists($json->{message})) {
             carp "bounces.delete failed - error message: $json->{message}\n";
