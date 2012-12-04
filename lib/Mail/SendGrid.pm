@@ -70,7 +70,7 @@ sub delete_bounces
     my $json;
     my $url;
 
-    $response = $self->_build_url('bounces.delete', \%opts, {});
+    $response = $self->_make_request('bounces.delete', \%opts, {});
 
     if ($response->{success}) {
         $json = decode_json($response->{content});
