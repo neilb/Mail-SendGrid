@@ -3,6 +3,7 @@ package Mail::SendGrid::Bounce;
 use strict;
 use warnings;
 
+use 5.008;
 use Mouse 0.94;
 
 has 'email'     => (is => 'ro', isa => 'Str', required => 1);

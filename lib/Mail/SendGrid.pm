@@ -3,6 +3,7 @@ use warnings;
 package Mail::SendGrid;
 # ABSTRACT: interface to SendGrid.com mail gateway APIs
 
+use 5.008;
 use Mouse 0.94;
 use HTTP::Tiny 0.013;
 use JSON 2.53;
