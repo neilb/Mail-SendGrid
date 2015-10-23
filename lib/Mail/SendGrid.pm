@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package Mail::SendGrid;
+
 # ABSTRACT: interface to SendGrid.com mail gateway APIs
 
 use 5.008;

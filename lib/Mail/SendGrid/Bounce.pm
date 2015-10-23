@@ -1,4 +1,5 @@
 package Mail::SendGrid::Bounce;
+
 # ABSTRACT: data object that holds information about a SendGrid bounce
 use strict;
 use warnings;
