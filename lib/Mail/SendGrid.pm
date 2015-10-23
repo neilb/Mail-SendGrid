@@ -253,3 +253,8 @@ The class which defines the data objects returned by the bounces method.
 L<http://sendgrid.com/docs/API%20Reference/Web%20API/bounces.html>
 
 =back
+
+=head1 REPOSITORY
+
+L<https://github.com/neilb/Mail-SendGrid>
+

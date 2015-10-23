@@ -1,5 +1,8 @@
 Revision history for Perl module Mail::SendGrid
 
+0.08 2015-10-23
+    - Updated github repo after changing my github username
+
 0.07 2014-01-27
     - Added explicit min perl version of 5.8 to SendGrid.pm
 
