@@ -21,18 +21,15 @@ Revision history for Perl module Mail::SendGrid
     - switched to the JSON endpoint, as much less hassle than XML
 
 0.03 2011-10-12
-
-  - fixed typo in SYNOPSIS section of Mail::SendGrid::Bounce
-  - Added Test::CPAN::Change to dist.ini
-  - Added GitHub to dist.ini; distribution now on Github as well.
-  - made the attributes required in Mail::SendGrid::Bounce
+    - fixed typo in SYNOPSIS section of Mail::SendGrid::Bounce
+    - Added Test::CPAN::Change to dist.ini
+    - Added GitHub to dist.ini; distribution now on Github as well.
+    - made the attributes required in Mail::SendGrid::Bounce
 
 0.02 2011-10-11
-
-  - added Changes file
-  - accidental release while playing with Dist::Zilla :-)
+    - added Changes file
+    - accidental release while playing with Dist::Zilla :-)
 
 0.01 2011-10-11
-
-  - initial release of module, with bounces method only
+    - initial release of module, with bounces method only
 
