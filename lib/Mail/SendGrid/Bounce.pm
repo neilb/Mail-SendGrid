@@ -5,12 +5,12 @@ use strict;
 use warnings;
 
 use 5.008;
-use Mouse 0.94;
+use Moo 1.006;
 
-has 'email'     => (is => 'ro', isa => 'Str', required => 1);
-has 'created'   => (is => 'ro', isa => 'Str', required => 1);
-has 'status'    => (is => 'ro', isa => 'Str', required => 1);
-has 'reason'    => (is => 'ro', isa => 'Str', required => 1);
+has 'email'     => (is => 'ro', required => 1);
+has 'created'   => (is => 'ro', required => 1);
+has 'status'    => (is => 'ro', required => 1);
+has 'reason'    => (is => 'ro', required => 1);
 
 1;
 

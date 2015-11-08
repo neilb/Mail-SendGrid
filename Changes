@@ -1,5 +1,11 @@
 Revision history for Perl module Mail::SendGrid
 
+0.09 2015-11-08
+    - Switched from Mouse to Moo: I was requiring 0.94 of Mouse, but that
+      was causing failures on old versions of Perl because recent releases
+      of Mouse have version numbers with a leading 'v', eg 'v2.4.5'.
+      See https://github.com/gfx/p5-Mouse/issues/55
+
 0.08 2015-10-23
     - Updated github repo after changing my github username
     - Added [MetaJSON] to dist.ini, to META.json will be in the release

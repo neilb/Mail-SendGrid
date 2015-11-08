@@ -5,7 +5,7 @@ package Mail::SendGrid;
 # ABSTRACT: interface to SendGrid.com mail gateway APIs
 
 use 5.008;
-use Mouse 0.94;
+use Moo 1.006;
 use HTTP::Tiny 0.013;
 use JSON 2.53;
 use URI::Escape 3.30;
@@ -13,8 +13,8 @@ use Carp 1.20;
 
 use Mail::SendGrid::Bounce;
 
-has 'api_user'  => (is => 'ro', isa => 'Str', required => 1);
-has 'api_key'   => (is => 'ro', isa => 'Str', required => 1);
+has 'api_user'  => (is => 'ro', required => 1);
+has 'api_key'   => (is => 'ro', required => 1);
 has 'ua'        => (is => 'ro', default => sub { HTTP::Tiny->new(); });
 
 my %valid_params =
