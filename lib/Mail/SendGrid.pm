@@ -251,7 +251,7 @@ The class which defines the data objects returned by the bounces method.
 
 =item SendGrid API documentation
 
-L<http://sendgrid.com/docs/API%20Reference/Web%20API/bounces.html>
+L<https://sendgrid.com/docs/API_Reference/Web_API_v3/bounces.html>
 
 =back
 
